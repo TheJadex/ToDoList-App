@@ -6,5 +6,5 @@ app_name = "tasks"
 
 urlpatterns = [
     # name = "name" --> here, i am giving the views funtion a name
-    path("home/", views.name, name="name"),
+    path("", views.name, name="name"),
 ]
