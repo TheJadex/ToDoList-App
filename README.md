@@ -1,2 +1,2 @@
 # ToDoList-App
-creating a mini todoList app using django
+a mini todoList app using django
