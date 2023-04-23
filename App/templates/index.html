@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+    
+<!-- Body Section -->
+    {% block body %}
+        <h1>Your activities</h1>
+
+        <ul>
+            {% for task in task %}
+                <li>{{ task }}</li>
+            {% endfor %}
+        </ul>
+
+        <form action="{% url 'tasks:name' %}" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit">
+        </form>
+    {% endblock %}
+<!-- End of Body Section -->
